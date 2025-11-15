@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+README-FM.md
+README-template.md
+style-guide.md
