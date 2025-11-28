@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
+@theme {
+  /* Colors */
+  --color-neutro-0: hsl(200, 60%, 99%);
+  --color-neutro-100: hsl(0, 0%, 93%);
+  --color-neutro-200: hsl(217, 61%, 90%);
+  --color-neutro-300: hsl(0, 0%, 78%);
+  --color-neutro-600: hsl(226, 11%, 37%);
+  --color-neutro-700: hsl(225, 23%, 24%);
+  --color-neutro-800: hsl(226, 25%, 17%);
+  --color-neutro-900: hsl(227, 75%, 14%);
+  --color-vermelho-400: hsl(3, 86%, 64%);
+  --color-vermelho-500: hsl(3, 71%, 56%);
+  --color-vermelho-700: hsl(3, 77%, 44%);
+
+  /* Font */
+  --font-noto: Noto Sans, sans-serif
+}
+
 :root {
   color-scheme: dark;
   background-color: #242424;
