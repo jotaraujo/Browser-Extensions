@@ -7,7 +7,7 @@ const ExtensionList = () => {
 
   return (
     <div>
-      <ul className="grid grid-cols-1 md:grid-cols-3 gap-3 max-w-6xl mx-auto">
+      <ul className="grid grid-cols-1 md:grid-cols-3 gap-2 max-w-6xl mx-auto">
         {extension.map((item) => (
           <ExtensionCard key={item.id} item={item} />
         ))}

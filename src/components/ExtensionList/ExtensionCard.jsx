@@ -3,7 +3,7 @@ import ToggleSwitch from "../common/ToggleSwitch"
 
 const ExtensionCard = ({ item }) => {
   return (
-    <div className="bg-neutro-800 py-3 px-4 border border-neutro-700 rounded-xl my-4">
+    <div className="bg-neutro-800 py-3 px-4 border border-neutro-700 rounded-xl">
       <li className="flex items-start ">
         <img src={item.logo} alt={item.name} />
         <div className="mx-4">

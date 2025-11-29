@@ -1,6 +1,15 @@
-const ToggleSwitch = () => {
+const ToggleSwitch = ({ isChecked, onToggle, id }) => {
   return (
-    <div>ToggleSwitch</div>
+    <label htmlFor={id} className="relative inline-block w-12 h-6 cursor-pointer">
+      <input
+        type="checkbox"
+        id={id}
+        className="sr-only peer"
+        checked={isChecked}
+        onChange={onToggle} />
+        <span className="absolute inset-0 bg-gray-300 rounded-full transition-colors duration-300 peer-checked:bg-vermelho-400"/>
+        <span className="absolute top-0.5 left-0.5 bg-white w-5 h-5 rounded-full transition-transform duration-300 ease-in-out shadow peer-checked:translate-x-6"/>
+    </label>
   )
 }
 
