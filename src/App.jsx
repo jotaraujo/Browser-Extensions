@@ -1,15 +1,18 @@
 import Header from './components/Header/Header'
 import FilterTabs from './components/ExtensionList/FilterTabs'
 import ExtensionList from './components/ExtensionList/ExtensionList';
+import { ThemeProvider } from './context/ThemeProvider';
 
 
 function App() {
   return (
-    <div className='bg-linear-to-b from-neutro-0 to-neutro-100 dark:from-slate-950 dark:to-indigo-950 px-60 py-15 h-screen overflow-y-auto font-noto'>
-      <Header />
-      <FilterTabs />
-      <ExtensionList />
-    </div>
+    <ThemeProvider >
+      <div className='bg-linear-to-b from-neutro-200 to-neutro-300 dark:from-neutro-950 dark:to-neutro-900 px-60 py-15 h-screen overflow-y-auto font-noto'>
+        <Header />
+        <FilterTabs />
+        <ExtensionList />
+      </div>
+    </ThemeProvider>
   )
 }
 
